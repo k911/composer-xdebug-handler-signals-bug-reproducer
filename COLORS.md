@@ -1,7 +1,7 @@
 # Bug Reproducer
 `Composer\XdebugHandler` does not detect properly TTY support in restarted process.
 
-## Reproducer `signals.php`
+## Reproducer `colors.php`
 
 Requirements: `xdebug` and extension enabled
 
