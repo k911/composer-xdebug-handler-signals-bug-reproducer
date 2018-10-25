@@ -1,0 +1,21 @@
+{
+    "name": "k911/composer-xdebug-handler-signals-bug-reproducer",
+    "description": "A Bug reproducer for not working signals within restarted process by Composer\\XdebugHandler",
+    "type": "project",
+    "require": {
+        "php": "^7.2",
+        "ext-pcntl": "*",
+        "ext-xdebug": "*",
+        "composer/xdebug-handler": "^1.3",
+        "symfony/console": "^4.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "k911",
+            "email": "konradobal@gmail.com"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
