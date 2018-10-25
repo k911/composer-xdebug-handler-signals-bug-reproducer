@@ -18,6 +18,8 @@ Requirements: `xdebug` and `pcntl` PHP extensions enabled
     # Stopping..
     # Stopped after 974 ms
     ```
+    
+    This is expected behaviour.
 
 2. Then, execute script without `APP_ALLOW_XDEBUG` environment variable
 
@@ -31,5 +33,5 @@ Requirements: `xdebug` and `pcntl` PHP extensions enabled
     # ^C
     ```
 
-    As you can see, process was stopped, but signal handler were never executed due to CLI sends it to first process not to the child. Of you could say, send signal to second process, which will execute signal and end process, but it makes CLI commands being unfriendly.
+    As you can see, process was stopped, but signal handler were never executed, because CLI sends it to first process, not to the child. Of course, I could send signal to second (child) process, which will handle signal and end process, but it makes CLI commands being unfriendly for end users.
 
